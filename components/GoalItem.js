@@ -5,7 +5,7 @@ const GoalItem = ({title, onDelete, id}) => {
     return (
         <TouchableOpacity
             activeOpacity={0.8}
-            onPress={onDelete(id)}
+            onPress={() => onDelete(id)}
         >
             <View style={styles.listItem}>
                 <Text>{title}</Text>
